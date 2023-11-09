@@ -346,7 +346,7 @@ body {
 }
 
 .hero {
-    background-image: url("C:/Users/HP-PC/Documents/20-30GC052/Weanow WebApp/asset/weanowBg.png");
+    background-image: url("C:/Users/HP-PC/Documents/20-30GC052/Weanow WebApp/asset/media/weanowBg.png");
     width: 100%;
     padding-bottom: 25rem;
     background-size: cover;
@@ -614,7 +614,7 @@ body {
 
 
 .temperatureContainer {
-    background-image: url("C:/Users/HP-PC/Documents/20-30GC052/Weanow WebApp/asset/RainyBg.png");
+    background-image: url("C:/Users/HP-PC/Documents/20-30GC052/Weanow WebApp/asset/media/RainyBg.png");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -680,7 +680,7 @@ body {
 }
 
 .weather {
-    background-image: url("C:/Users/HP-PC/Documents/20-30GC052/Weanow WebApp/asset/WindBg.png");
+    background-image: url("C:/Users/HP-PC/Documents/20-30GC052/Weanow WebApp/asset/media/WindBg.png");
     background-size: cover;
     display: flex;
     justify-content: space-around;
@@ -700,7 +700,7 @@ body {
 }
 
 .weather:nth-child(3) {
-    background-image: url("C:/Users/HP-PC/Documents/20-30GC052/Weanow WebApp/asset/HumidityBg.png");
+    background-image: url("C:/Users/HP-PC/Documents/20-30GC052/Weanow WebApp/asset/media/HumidityBg.png");
 }
 
 .footer-content {
