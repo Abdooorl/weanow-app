@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weanow App</title>
+        <link rel="shortcut icon" href="media\weanowLogo.png" type="image/x-icon">
+        <meta name="Author" content="Badamosi Abdullahi">
+        <meta name="Description" content="Weanow Weather Wind Humidity Temperature Country Degree Celsius Page Search">
+        <meta-viewport content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="asset\media\weanowLogo.png" type="image/x-icon">
+        <link rel="shortcut icon" href="media\weanowLogo.png" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
+    </head>
+    <body onload="askForLocationPermission()">
+        <!--- Hero Section-->
+            <header class="hero head">
+                <div class="overlay-hero"></div>
+                    <div class="container">
+                        <div class="contain top-bar">
+                            <a href="#"><img class="logo logoImage" src="media\lightModeLogo.png" alt="Logo"></a>
+                            <div class="mode">
+                                <div class="state lightMode activeMode">
+                                    <svg class="lightSun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256"><path d="M120,40V16a8,8,0,0,1,16,0V40a8,8,0,0,1-16,0Zm8,24a64,64,0,1,0,64,64A64.07,64.07,0,0,0,128,64ZM58.34,69.66A8,8,0,0,0,69.66,58.34l-16-16A8,8,0,0,0,42.34,53.66Zm0,116.68-16,16a8,8,0,0,0,11.32,11.32l16-16a8,8,0,0,0-11.32-11.32ZM192,72a8,8,0,0,0,5.66-2.34l16-16a8,8,0,0,0-11.32-11.32l-16,16A8,8,0,0,0,192,72Zm5.66,114.34a8,8,0,0,0-11.32,11.32l16,16a8,8,0,0,0,11.32-11.32ZM48,128a8,8,0,0,0-8-8H16a8,8,0,0,0,0,16H40A8,8,0,0,0,48,128Zm80,80a8,8,0,0,0-8,8v24a8,8,0,0,0,16,0V216A8,8,0,0,0,128,208Zm112-88H216a8,8,0,0,0,0,16h24a8,8,0,0,0,0-16Z"></path></svg>
+                                    <p class="modeText">Light</p>
+                                </div>
+                                <div class="state dark-Mode">
+                                    <svg class="darkMoon" xmlns="http://www.w3.org/2000/svg" width="22" height="22"  viewBox="0 0 256 256"><path d="M235.54,150.21a104.84,104.84,0,0,1-37,52.91A104,104,0,0,1,32,120,103.09,103.09,0,0,1,52.88,57.48a104.84,104.84,0,0,1,52.91-37,8,8,0,0,1,10,10,88.08,88.08,0,0,0,109.8,109.8,8,8,0,0,1,10,10Z"></path></svg>
+                                    <p class="modeText">Dark</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="Header contain">
+                    <h1 class="heading">Weather Updates at Your FingerTips</h1>
+                    <p class="subHeading">Plan your activities with the sun in mind by checking sunrise and sunset times for your location</p>
+                </div>
+            </header>
+
+
+            <!--- Main Section-->
+        
+            <main class="mainSection">
+
+                <section class="upperBar">
+                    <a href="#"><img class="logo logoImage" src="media\lightModeLogo.png" alt="Logo"></a>
+                    <div class="searchTools">
+                        <div class="inputContainer">
+                            <svg class="searchIcon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"  viewBox="0 0 256 256"><path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path></svg>
+                            <input type="text" class="searchPlaceholder" name="searchBar" id="searchBar" placeholder="Enter City Name">
+                            <svg class="deleteIcon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg>
+                        </div>
+                        <input class="searchText" id="searchBtn" type="submit" value="Search" form="searchBar">
+                    </div>
+                </section>
+
+                <section class="main-content"></section>
+                    <!-- <div class="loader"></div> -->
+                    <div class="Not-Display  Give-Permission">
+                        <div><svg class="smiley" xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216ZM80,108a12,12,0,1,1,12,12A12,12,0,0,1,80,108Zm96,0a12,12,0,1,1-12-12A12,12,0,0,1,176,108Zm-1.08,64a8,8,0,1,1-13.84,8c-7.47-12.91-19.21-20-33.08-20s-25.61,7.1-33.08,20a8,8,0,1,1-13.84-8c10.29-17.79,27.39-28,46.92-28S164.63,154.2,174.92,172Z"></path></svg></div> 
+                        <p class="invalidText">You can input the city name or you can give us the permission to access your current location's weather</p>
+                        <button class="givePermission" type="button">Give Permission</button>
+                    </div>
+                    <div class="Not-Display Invalid-city">
+                        <svg class="smiley" xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216ZM80,108a12,12,0,1,1,12,12A12,12,0,0,1,80,108Zm96,0a12,12,0,1,1-12-12A12,12,0,0,1,176,108Zm-1.08,64a8,8,0,1,1-13.84,8c-7.47-12.91-19.21-20-33.08-20s-25.61,7.1-33.08,20a8,8,0,1,1-13.84-8c10.29-17.79,27.39-28,46.92-28S164.63,154.2,174.92,172Z"></path></svg>
+                        <p class="invalidText">No results for your search. Please enter a valid city name.</p>
+                    </div>
+
+
+                    <div class="data">
+
+                        <div class="temperatureContainer">
+                                
+                                <img class="weatherImage" src="media\Rain.png" alt="Heavy Rain" aria-label="Heavy Rain">
+                                <div class="weather-condition">
+                                    <p class="weatherText">Heavy Rain</p>
+                                    <p class="tempData">38°C</p>
+                                </div>
+
+                                <div class="aboutLocation">
+                                    <p class="locationToday">Lagos</p>
+                                    <p class="locationData">Lagos City, A beautiful and booming city located in the African Continent. It is on Latitude “8.4685057658512821” & Longitude “4.612174781343582”. You will love to be there!.</p>
+                                </div>
+
+                            
+                            
+                        </div>
+
+                        <div class="wind weather">
+                            <p class="windHumidity">Wind</p>
+                            <div class="windcontainer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#ffffff" viewBox="0 0 256 256"><path d="M184,184a32,32,0,0,1-32,32c-13.7,0-26.95-8.93-31.5-21.22a8,8,0,0,1,15-5.56C137.74,195.27,145,200,152,200a16,16,0,0,0,0-32H40a8,8,0,0,1,0-16H152A32,32,0,0,1,184,184Zm-64-80a32,32,0,0,0,0-64c-13.7,0-26.95,8.93-31.5,21.22a8,8,0,0,0,15,5.56C105.74,60.73,113,56,120,56a16,16,0,0,1,0,32H24a8,8,0,0,0,0,16Zm88-32c-13.7,0-26.95,8.93-31.5,21.22a8,8,0,0,0,15,5.56C193.74,92.73,201,88,208,88a16,16,0,0,1,0,32H32a8,8,0,0,0,0,16H208a32,32,0,0,0,0-64Z"></path></svg>
+                                <p class="windData">19<span>km/hr</span></p>
+                            </div>
+                            <p class="aboutWind">“Wind let us know if it will rain”</p>
+                        </div>
+
+                        <div class="humidity weather">
+                            <p class="windHumidity">Humidity</p>
+                            <div class="windcontainer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#ffffff" viewBox="0 0 256 256"><path d="M174,47.75a254.19,254.19,0,0,0-41.45-38.3,8,8,0,0,0-9.18,0A254.19,254.19,0,0,0,82,47.75C54.51,79.32,40,112.6,40,144a88,88,0,0,0,176,0C216,112.6,201.49,79.32,174,47.75ZM56,144c0-57.23,55.47-105,72-118V216A72.08,72.08,0,0,1,56,144Z"></path></svg>
+                                <p class="windData humidityData">70<span>%</span></p>
+                            </div>
+                            <p class="aboutWind">““Will the it be warmer or cooler?””</p>
+                        </div>
+                    </div>
+
+            </main>
+
+            <footer class="footer">
+                <div class="footer-content">
+                    <a href="#"><img class="logo logoImage" src="media\lightModeLogo.png" alt="Logo"></a>
+                    <p class="footer-details ">Designed & Developed by Abdoorl</p>
+                    <p class="footer-details grey">All Rights Reserved</p>
+                </div>
+            </footer>
+
+        <script src="index.js"></script>
+        <script src="location.js"></script>
+
+    </body>
+
+</html>
+
