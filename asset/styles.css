@@ -552,7 +552,7 @@ body {
    background-color: var(--primary-blue);
    border: none;
    cursor: pointer;
-   transition: background-color .4s ease-in-out;
+   transition: .4s ease-in-out;
 }
 
 #searchBtn:hover {
