@@ -78,26 +78,26 @@ function askForLocationPermission() {
 
                 if (mainWeather === "Rain") {
 
-                    temperatureContainer.style.backgroundImage = `url("C:/Users/HP-PC/Weanow/weanow-app/asset/RainyBg.png")`
+                    temperatureContainer.style.backgroundImage = `url("RainyBg.png")`
                     weatherIcon.src = "Rain.png"
 
                 } else if (mainWeather === "Thunderstorm") {
 
-                    temperatureContainer.style.backgroundImage = `url("C:/Users/HP-PC/Weanow/weanow-app/asset/HeavyRainBg.png")`
+                    temperatureContainer.style.backgroundImage = `url("HeavyRainBg.png")`
                     weatherIcon.src = "Heavyrain.png"
 
                 } else if (mainWeather === "Clear") {
 
-                    temperatureContainer.style.backgroundImage = `url("/C:/Users/HP-PC/Weanow/weanow-app/asset/SunnyBg.png")`
+                    temperatureContainer.style.backgroundImage = `url("/SunnyBg.png")`
                     weatherIcon.src = "Sun.png"
 
                 } else if (mainWeather === "Snow") {
 
-                    temperatureContainer.style.backgroundImage = `url("C:/Users/HP-PC/Weanow/weanow-app/asset/SnowBg.png")`
+                    temperatureContainer.style.backgroundImage = `url("SnowBg.png")`
                     weatherIcon.src = "Snow.png"
 
                 } else {
-                    temperatureContainer.style.backgroundImage = `url("C:/Users/HP-PC/Weanow/weanow-app/asset/PartlyCloudyBg.png")`
+                    temperatureContainer.style.backgroundImage = `url("PartlyCloudyBg.png")`
                     weatherIcon.src = "Partlycloud.png"
                 }
 
@@ -173,27 +173,27 @@ function cityData() {
 
                 if (mainWeather === "Rain") {
 
-                    temperatureContainer.style.backgroundImage = `url("C:/Users/HP-PC/Documents/20-30GC052/Weanow WebApp/asset/media/RainyBg.png")`
-                    weatherIcon.src = "C:/Users/HP-PC/Weanow/weanow-app/asset/Rain.png"
+                    temperatureContainer.style.backgroundImage = `url(RainyBg.png")`
+                    weatherIcon.src = "Rain.png"
 
                 } else if (mainWeather === "Thunderstorm") {
 
-                    temperatureContainer.style.backgroundImage = `url("C:/Users/HP-PC/Documents/20-30GC052/Weanow WebApp/asset/media/HeavyRainBg.png")`
+                    temperatureContainer.style.backgroundImage = `url("HeavyRainBg.png")`
                     weatherIcon.src = "Heavyrain.png"
 
                 } else if (mainWeather === "Clear") {
 
-                    temperatureContainer.style.backgroundImage = `url("C:/Users/HP-PC/Documents/20-30GC052/Weanow WebApp/asset/media/SunnyBg.png")`
-                    weatherIcon.src = "C:/Users/HP-PC/Weanow/weanow-app/asset/Sun.png"
+                    temperatureContainer.style.backgroundImage = `url("SunnyBg.png")`
+                    weatherIcon.src = "Sun.png"
 
                 } else if (mainWeather === "Snow") {
 
-                    temperatureContainer.style.backgroundImage = `url("C:/Users/HP-PC/Documents/20-30GC052/Weanow WebApp/asset/media/SnowBg.png")`
-                    weatherIcon.src = "C:/Users/HP-PC/Weanow/weanow-app/asset/Snow.png"
+                    temperatureContainer.style.backgroundImage = `url("SnowBg.png")`
+                    weatherIcon.src = "Snow.png"
 
                 } else {
-                    temperatureContainer.style.backgroundImage = `url("C:/Users/HP-PC/Documents/20-30GC052/Weanow WebApp/asset/media/PartlyCloudyBg.png")`
-                    weatherIcon.src = "C:/Users/HP-PC/Weanow/weanow-app/asset/Partlycloud.png"
+                    temperatureContainer.style.backgroundImage = `url("PartlyCloudyBg.png")`
+                    weatherIcon.src = "Partlycloud.png"
                 }
 
                 weatherText.innerHTML = `${mainWeather}`;

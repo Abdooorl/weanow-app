@@ -21,7 +21,7 @@ const darkModeOn = () => {
 
     for ( i = 0; i < logoImage.length; i++) {
        
-        logoImage[i].src= "media/darkModeLogo.png"
+        logoImage[i].src= "darkModeLogo.png"
     }  
 
     localStorage.setItem("darkMode", true)
@@ -37,7 +37,7 @@ const darkModeOff = () => {
 
     for ( i = 0; i < logoImage.length; i++) {
        
-        logoImage[i].src= "media/lightModeLogo.png"
+        logoImage[i].src= "lightModeLogo.png"
     } 
 
     
